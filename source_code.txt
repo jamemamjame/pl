@@ -1,0 +1,279 @@
+1
+a = .123
+
+2
+a = b
+
+3
+a = 3 ; b = 3
+
+4
+a = 3 ; b = a
+
+5
+a = a + b
+
+6
+a = 20 + b
+
+7
+a = (a + 3) * 1
+
+8
+a = (a + 3) * (a + 3)
+
+9
+a = ((a + 1) / b)
+
+10
+a = ((a + 1) / b) / (a - c)
+
+11
+a = ((a + 1) / b) ; b = 3
+
+12
+
+13
+
+14
+
+15
+
+16
+
+17
+
+18
+
+20
+if a < 3 then b = 3
+
+21
+if a > 3 then b = 3 ; c = 3
+
+22
+if a == 3 then a = 11 + (11 * (11 / 22))
+
+23
+if a < (3 * b) then a = 0 else a = 1
+
+24
+if (a + 3) > b then b = 3 ; c = 3 else a = 1
+
+25
+if (a + b) == c then a = b ; c = 0 else a = 1 ; b = 2
+
+26 # special case, program don't know how to split token
+if a == b then a = 0 else a = 1 ; b = 2
+
+27
+if a < 3 then a = 3
+
+28
+if a < 3 then a = 3
+
+29
+repeat x = x + 1 until x < 3
+
+30# กรณีเช็คปีกกา
+repeat read a ; if ( a < 5 )  then { a= 25 * 25 } else { repeat a = a + 1 until a == 5 ; read b } until c == 6
+
+31
+repeat read a ; if ( a < 5 )  then  a = 25 * 25  else  repeat a = a + 1 until a == 5 ; read b  until c == 6
+
+32
+repeat a = 1000 ; repeat
+
+33 # Epictree 1
+if (z > 7) then repeat x = 7; a = 8 until z > 1 else repeat read z ; repeat i = 100 ; if ( j> 27 ) then repeat repeat if (d > 33 ) then repeat read n; if (y == 98 ) then read o else repeat e = 11; f = 17 until h == 11 until k>22 until e==34 until w== 71 until y<29 until n<32
+
+34
+repeat if (x > 25) then x = 5 until x
+
+35
+repeat if (x > 25) then x = 5 until 5
+
+36
+repeat if (x > 25) then x = 5 until (5 * 2)
+
+37
+repeat if (x > 25) then x = 5 until (5 + 2)
+
+38
+repeat if (x > 25) then x = 5 until y > x
+
+39
+repeat if (x > 25) then x = 5 until x > 3
+
+40
+repeat if (x > 25) then x = 5 until y > ((x + 5)-(z / 2))
+
+41
+repeat if (x > 25) then read y until x
+
+42
+repeat if (x > 25) then read y until 5
+
+43
+repeat if (x > 25) then read y until (5 * 2)
+
+44
+repeat if (x > 25) then read y until (5 + 2)
+
+45
+repeat if (x > 25) then read y until y > x
+
+46
+repeat if (x > 25) then read y until x > 3
+
+47
+repeat if (x > 25) then read y until y > ((x + 5) - (z / 2))
+
+48
+repeat if (x > 25) then x = 5 else read y until  y > ((x + 5) - (z / 2))
+
+49
+repeat if (x > 25 ) then x = 5 else y = 6 until y > ((x + 5) - (z / 2))
+
+50
+repeat if (x > 25 ) then x = 5 else if ( a > 25 ) then m = ((x * 5) - (z / 2 ) > q) until k < 22
+
+51
+repeat if (x > 25 ) then x = 5 else if ( a > 25 ) then read y else  x = 10 until c == 155
+
+52
+repeat if (x > 25 ) then x = 5 else if ( a > 25 ) then repeat repeat if ( b < 32 ) then g = 31 else repeat y = 5 until (x * 6) + 5 ; read g until x < 7 ; x = 11 until m > 16 until r == 43
+
+53
+repeat repeat repeat if ( j > 72 ) then repeat y = 5 ; if ( h > 54 ) then  m = h * (4+t) else read w until k == 11 ; read d until w > 11 ; x = 5 until p > 44 ; c = (s / t) + 5 until m == 1
+
+54
+repeat if ( h == 1 )  then  if ( b > 52 ) then x = 32 * ((42 + M) / (J - K)) else repeat read r until 77 ; x = 11*(I / 24 ) until i > 101
+
+55
+repeat if ( v > 90 ) then repeat r = 1 + ((P * 4) / (5 + 2) ) ; repeat t = 4 ; if ( N == 14 ) then repeat repeat read y ; y = 11 until x == 1 ; if ( r < 14 ) then x = 4 + 10  until f == 14 until p <42 until a > 58 until y < 43
+
+56
+repeat if (((x == +4))) then if x==2 then y=2 else y =0 else r=0 until (x < 0)
+
+57
+K = 119 * 5 - 8
+
+58
+L = 8 + 5 * 119
+
+59
+M = 9 - i * y
+
+60
+N = (12 - i) + 5 > 5 + ( i / j)
+
+61
+O = (h)
+
+62
+P = (q == 71)
+
+63
+Q = (5 - 1 * 5)
+
+64
+R = (4 / 2 + 3)
+
+65
+S = ((c) + y)/( m * (n))
+
+66
+T = ((1) == 4) * (2)
+
+67
+a = 12
+
+68
+current = 3
+
+69
+sum = a + b
+
+70
+b = 12 / a > 4 * 2
+
+71
+balance = k < 1
+
+72
+c = b + 3 == 14 - 2
+
+73
+diff = ((a - q) + (c - 1)) + (h - (j - 3))
+
+74
+d = (95 * 11) + (20 - c) / b
+
+75
+I =(12 - q) / (p - 1)
+
+76
+J = (10 > i) < 9
+
+77
+read yy ; x=3
+
+78
+read something
+
+79
+read haha ; if (x>3) then y=0 until x=12
+
+80
+read ok ; L=(3+a)-a(p)
+
+81
+read bobo ; j=(7*y)-17
+
+82
+read fifo ; read bravo
+
+83
+read concensus ; H=6+9-12+80
+
+84
+read conflict ; if (I<3) then luv=0 until U<3
+
+85
+read comsci ; TOS=UNIt+90*79/4
+
+86
+read Finalexam ; if(time>0) then input=0 until time=0
+
+87
+read Fof44t
+
+88
+read trtr0er ; TtYy6=77
+
+89
+read ttoo ; if(x<90) then read x until y
+
+90
+read www ; if(t<40) then m=9 until t=3
+
+91
+read cb ; d=(12+(67-3(t*6)))
+
+92
+read hh ; h=(ro(55+56)/7)+68/2
+
+93
+read time ; fo=967777-(222*9)+445*6
+
+94
+read gogo ; L=(10>i)<6
+
+95
+read bb ; kk+67 == yu+56
+
+96
+read cc ; diff= (a-d) + (c-3) + (h-(g+2))
+
+_end_

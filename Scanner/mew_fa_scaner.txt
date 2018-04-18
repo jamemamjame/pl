@@ -1,0 +1,50 @@
+1 keyword
+2 ;
+3 <
+4 >
+5 +
+6 *
+7 =
+9 id
+15 n
+18 array
+21 (
+22 )
+
+0 if 1
+0 for 1
+0 else 1
+0 ; 2
+0 < 3
+0 > 4
+0 + 5
+0 * 6
+0 = 7
+0 letter 8
+0 - 12
+0 digit 13
+0 . 11
+0 ( 21
+0 ) 22
+8 [ 16
+8 letter 8
+8 digit 10
+8 other 9 t
+10 letter 10
+10 digit 10
+10 other 9 t
+11 digit 11
+11 other 15 t
+12 digit 12
+12 other 15 t
+13 digit 13
+13 other 15 t
+13 . 14
+14 digit 14
+14 other 15 t
+16 digit 16
+16 ] 17
+17 [ 19
+19 digit 19
+19 ] 20
+20 other 18 t

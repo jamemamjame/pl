@@ -1,0 +1,74 @@
+exp -> aterm exp1
+exp1 -> addop aterm exp1
+exp1 -> _E_
+addop -> +
+aterm -> factor aterm1
+aterm1 -> mulop factor aterm1
+aterm1 -> _E_
+mulop -> *
+factor -> ( exp )
+factor -> num
+factor -> id
+rexp -> exp rop exp
+rop -> >
+rop -> <
+st -> ast
+ast -> id = exp ;
+st -> matchst
+st -> unmatchst
+unmatchst -> if ( rexp ) block
+unmatchst -> if ( rexp ) matchst else unmatchst
+matchst -> if ( rexp ) matchst else matchst
+matchst -> block
+st -> forst
+forst -> for ( cst ; rexp ; cst ) fbst
+cst -> st
+cst -> _E_
+block -> bst
+block -> fbst
+bst -> { bsts }
+bst -> _E_
+bsts -> st bst
+fbst -> { bsts }
+fbst -> st
+---------------------
+prog -> stSeq
+stSeq -> st stSeq2
+stSeq2 -> _E_
+stSeq2 -> ; st
+
+st -> ifSt
+st -> forSt
+st -> asgnSt
+
+ifSt -> if ( ifSt ) block ifSt2
+ifSt -> if ( exp ) block ifSt2
+ifSt -> if ( forSt ) block ifSt2
+block -> { stSeq }
+ifSt2 -> _E_
+ifSt2 -> else block
+
+forSt -> repeat stSeq until exp
+forSt -> for ( StSeq ;
+
+asgnSt -> id = exp
+
+exp -> arithExp exp2
+exp2 -> relOp arithExp
+exp2 -> _E_
+relOp -> <
+relOp -> >
+relOp -> ==
+arithExp -> term arithExp2
+arithExp2 -> op1 term
+arithExp2 -> _E_
+op1 -> +
+op1 -> -
+term -> factor term2
+term2 -> op2 factor
+term2 -> _E_
+op2 -> *
+op2 -> /
+factor -> ( exp )
+factor -> n
+factor -> id
